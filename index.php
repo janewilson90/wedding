@@ -1,4 +1,4 @@
-<partial src="head.html" title="Jane and Rich get hitched"></partial>
+<?php include 'partials/head.php'?>
 	<body>
 		<div id="fh5co-wrapper">
 		<div id="fh5co-page">
