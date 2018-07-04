@@ -3,6 +3,7 @@
     "gulp": "latest",
     "gulp-concat": "latest",
     "gulp-connect": "latest",
+    "gulp-html-partial": "^1.0.1",
     "gulp-order": "latest",
     "gulp-rename": "latest",
     "gulp-sass": "^4.0.1",

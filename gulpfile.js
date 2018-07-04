@@ -6,6 +6,8 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
     order = require('gulp-order');
+  
+const htmlPartial = require('gulp-html-partial');
 
 var jsSources = ['js/*.js'],
     sassSources = ['sass/*.scss'],
@@ -63,6 +65,9 @@ gulp.task('connect', function() {
 
 gulp.task('html', function() {
   gulp.src(htmlSources)
+  .pipe(htmlPartial({
+    basePath: 'partials/'
+  }))
   .pipe(connect.reload())
 });
 
