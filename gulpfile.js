@@ -7,6 +7,8 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     order = require('gulp-order');
 
+var browserSync = require('browser-sync').create();
+
 var jsSources = ['js/*.js'],
     sassSources = ['sass/*.scss'],
     htmlSources = ['**/*.html'],
@@ -20,6 +22,9 @@ gulp.task('sass', function() {
   .pipe(sass({outputStyle: 'expanded'}))
     .on('error', gutil.log)
   .pipe(gulp.dest(outputCSSDir))
+  .pipe(browserSync.reload({
+    stream: true
+  }))
   .pipe(connect.reload())
 });
 
@@ -76,4 +81,12 @@ gulp.task('html', function() {
   .pipe(connect.reload())
 });
 
-gulp.task('default', ['html', 'js', 'minify', 'sass', 'connect', 'watch']);
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: '.'
+    },
+  })
+})
+
+gulp.task('default', ['html', 'js', 'minify', 'sass', 'connect', 'watch', 'browserSync']);
