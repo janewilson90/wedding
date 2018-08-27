@@ -48,6 +48,16 @@ gulp.task('js', function() {
 		.pipe(connect.reload())
 });
 
+gulp.task('minify', function() {
+  gulp 
+    .src('js/countdown.js')
+    .pipe(gulp.dest(outputDir))
+    .pipe(uglify({mangle: false}))
+    .pipe(rename('countdown.min.js'))
+    .pipe(gulp.dest(outputDir))
+    .pipe(connect.reload())
+});
+
 gulp.task('watch', function() {
   gulp.watch(jsSources, ['js']);
   gulp.watch(sassSources, ['sass']);
@@ -66,4 +76,4 @@ gulp.task('html', function() {
   .pipe(connect.reload())
 });
 
-gulp.task('default', ['html', 'js', 'sass', 'connect', 'watch']);
+gulp.task('default', ['html', 'js', 'minify', 'sass', 'connect', 'watch']);
