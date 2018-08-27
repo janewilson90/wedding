@@ -1,7 +1,6 @@
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
     sass = require('gulp-sass'),
-   // connect = require('gulp-connect'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
@@ -25,7 +24,6 @@ gulp.task('sass', function() {
   .pipe(browserSync.reload({
     stream: true
   }))
- // .pipe(connect.reload())
 });
 
 gulp.task('js', function() {
@@ -50,7 +48,6 @@ gulp.task('js', function() {
 		.pipe(uglify({mangle: false}))
 		.pipe(rename('scripts.min.js'))
 		.pipe(gulp.dest(outputDir))
-	//	.pipe(connect.reload())
 });
 
 gulp.task('minify', function() {
@@ -60,7 +57,6 @@ gulp.task('minify', function() {
     .pipe(uglify({mangle: false}))
     .pipe(rename('countdown.min.js'))
     .pipe(gulp.dest(outputDir))
-   // .pipe(connect.reload())
 });
 
 gulp.task('watch', function() {
@@ -69,16 +65,9 @@ gulp.task('watch', function() {
   gulp.watch(htmlSources, ['html']);
 });
 
-// gulp.task('connect', function() {
-//   connect.server({
-//     root: '.',
-//     livereload: true
-//   })
-// });
 
 gulp.task('html', function() {
   gulp.src(htmlSources)
- // .pipe(connect.reload())
 });
 
 gulp.task('browserSync', function() {
