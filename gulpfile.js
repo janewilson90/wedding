@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 
 var browserSync = require('browser-sync').create();
 
-var jsSources = ['js/*.js'],
+var jsSources = ['js/*.js', '!js/countdown.js'],
     sassSources = ['sass/*.scss'],
     htmlSources = ['**/*.html'],
     outputCSSDir = 'css',

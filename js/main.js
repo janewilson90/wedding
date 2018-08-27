@@ -69,7 +69,6 @@
 		$(window).resize(function(){
 			var w = $(window);
 
-
 			$('#offcanvas-menu').css('height', w.height());
 
 			if ( w.width() > 769 ) {
