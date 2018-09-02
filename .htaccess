@@ -1,1 +1,2 @@
 DirectoryIndex index.html
+ErrorDocument 404 /not-found.html
