@@ -810,66 +810,6 @@ figure {
   transform: scale(1.1);
 }
 
-.fh5co-blog {
-  margin-bottom: 60px;
-}
-
-.fh5co-blog a img {
-  width: 100%;
-}
-
-@media screen and (max-width: 768px) {
-  .fh5co-blog {
-    width: 100%;
-  }
-}
-
-.fh5co-blog .blog-text {
-  margin-bottom: 30px;
-  position: relative;
-  background: #fff;
-  width: 100%;
-  padding: 30px;
-  float: right;
-}
-
-.fh5co-blog .blog-text span {
-  display: inline-block;
-  margin-bottom: 20px;
-  font-size: 18px;
-}
-
-.fh5co-blog .blog-text span.by {
-  color: rgba(0, 0, 0, 0.5);
-  margin-right: 7px;
-}
-
-.fh5co-blog .blog-text span.posted_date {
-  color: rgba(0, 0, 0, 0.5);
-  margin-right: 7px;
-}
-
-.fh5co-blog .blog-text span.comment a {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.fh5co-blog .blog-text span.comment a i {
-  color: #a50b5e;
-  padding-left: 4px;
-}
-
-.fh5co-blog .blog-text h3 {
-  font-size: 20px;
-  margin-bottom: 20px;
-  font-weight: 300;
-  line-height: 1.5;
-  font-family: "Open Sans", Arial, sans-serif;
-}
-
-.fh5co-blog .blog-text h3 a {
-  color: rgba(0, 0, 0, 0.6);
-}
-
 #map {
   width: 100%;
   height: 500px;
