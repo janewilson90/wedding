@@ -836,6 +836,28 @@ figure {
   color: #5a5a5a;
 }
 
+.quiz {
+  background: #a50b5e;
+}
+
+.quiz h1, .quiz h2, .quiz h3, .quiz h4, .quiz p {
+  color: #fff;
+}
+
+#question ul {
+  text-align: left;
+  color: #fff;
+  list-style-type: none;
+}
+
+#question ul input {
+  margin-right: 1em;
+}
+
+.quiz-btn {
+  color: #fff;
+}
+
 #footer {
   background: #a50b5e;
   padding: 60px 0 40px;
