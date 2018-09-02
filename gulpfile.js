@@ -15,7 +15,6 @@ var jsSources = ['js/*.js', '!js/countdown.js'],
     outputJSDir = 'js',
     outputDir = 'dist';
 
-
 gulp.task('sass', function() {
   gulp.src(sassSources)
   .pipe(sass({outputStyle: 'expanded'}))
@@ -65,7 +64,6 @@ gulp.task('watch', function() {
   gulp.watch(htmlSources, ['html']);
 });
 
-
 gulp.task('html', function() {
   gulp.src(htmlSources)
 });
@@ -77,5 +75,6 @@ gulp.task('browserSync', function() {
     },
   })
 })
+
 
 gulp.task('default', ['html', 'js', 'minify', 'sass', 'watch', 'browserSync']);

@@ -8,6 +8,7 @@
     "gulp-rename": "latest",
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "latest",
-    "gulp-util": "latest"
+    "gulp-util": "latest",
+    "sw-precache": "^5.2.1"
   }
 }
