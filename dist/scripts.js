@@ -759,7 +759,7 @@ function init() {
             'their hospitality. The present Threiplands believe that if human happiness '+
             'is possible it can be found in family life, so they are delighted to welcome '+
             'wedding parties and gatherings of all sorts to this magic place. '+
-            '<p><a target="_blank" href="https://www.google.co.uk/maps/place/Fingask+Castle/@56.4330661,-3.2558053,17z/data=!3m1!4b1!4m5!3m4!1s0x48863f4db050db23:0xd3e254d2e5e9ab20!8m2!3d56.4330632!4d-3.2536166">'+
+            '<p><a target="_blank" href="//www.google.co.uk/maps/place/Fingask+Castle/@56.4330661,-3.2558053,17z/data=!3m1!4b1!4m5!3m4!1s0x48863f4db050db23:0xd3e254d2e5e9ab20!8m2!3d56.4330632!4d-3.2536166">'+
             'Open in GoogleMaps</a></p>'+
             '</div>'+
             '</div>';
